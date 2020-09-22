@@ -7,10 +7,6 @@ import (
 	"time"
 )
 
-func main() {
-	fmt.Println(GetDaysOfThisMonth())
-}
-
 func GetDaysOfThisMonth() []string {
 	thisYear := time.Now().Year()
 	thisMonth := int(time.Now().Month())
@@ -30,10 +26,9 @@ func GetDaysOfThisMonth() []string {
 		ret = append(ret, str)
 	}
 
-	for _, s := range ret {
+	/*	for _, s := range ret {
 		fmt.Println(s)
-	}
-	//fmt.Println(ret)
+	}*/
 	return ret
 }
 
