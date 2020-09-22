@@ -43,9 +43,8 @@ func GetDaysOfMonth(year int) [12]int {
 	daysOfNotLeapYear := [12]int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 	if isLeapYear(year) {
 		return daysOfLeapYear
-	} else {
-		return daysOfNotLeapYear
 	}
+	return daysOfNotLeapYear
 }
 
 // isLeapYear is check leap year.
